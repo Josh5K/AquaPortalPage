@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title AquaFPS
+    link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+    link(rel='stylesheet', href='/css/index.css')
+    link(href='https://fonts.googleapis.com/css?family=Roboto:300,400,700', rel='stylesheet')
+  body
+    div
+      img.logo(src='img/logo.png')
+      p#stream AquaFPS' stream is currently offline
+    .image-nav
+      .image-menus
+        a.image-link(href='https://www.twitch.tv/aquafpsgaming')
+          img(src='img/twitchlogo.png', height='190px', width='165')
+        h1 Twitch
+      .image-menus
+        a.image-link(href='https://www.youtube.com/aquafps')
+          img(src='img/youtubelogo.png', height='190px', width='165')
+        h1 Youtube
+      .image-menus
+        a.image-link(href='https://twitter.com/aquafpsgaming')
+          img(src='img/twitterlogo.png', height='190px', width='165')
+        h1 Twitter
+      .image-menus
+        a.image-link(href='https://www.battlemetrics.com/servers/rust/1613503/banners')
+          img(src='img/rust.png', height='190px', width='165')
+        h1 The Aquarium
+    .image-nav
+      .image-menus
+        a.image-link(href='https://discordapp.com/invite/aquafps')
+          img(src='img/discord.png', height='190px', width='165')
+        h1 Discord
+      .image-menus
+        a.image-link(href='https://www.CreatorsClub.net')
+          img(src='img/cclogo.png', height='190px', width='165')
+        h1 Creators Club
+      .image-menus
+        a.image-link(href='https://teespring.com/stores/aquafps')
+          img(src='img/CoolClothes.png', height='190px', width='165')
+        h1 Cool Clothes
+      .image-menus
+        a.image-link(href='https://www.creatorsclub.net/product-category/aquafps/')
+          img(src='img/PepsiAquaFPS.png', height='190px', width='165')
+        h1 More Merch
+    script(src='../twitch.json')
+    script(src='js/twitch.js')
+    script(src='https://code.jquery.com/jquery-3.2.1.min.js')
+    script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')

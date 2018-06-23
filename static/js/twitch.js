@@ -17,11 +17,11 @@ function loadJSON(callback) {
     loadJSON(function(response) {
        var stream = JSON.parse(response);
        
-       if(stream.views != undefined)
+       if(stream.stream.viewers != undefined)
        {
         var offline = document.getElementById('stream');
         var online = document.createElement('p');
-        online.innerHTML = 'AquaFPS\' stream is live with ' + stream.views + ' viewers';
+        online.innerHTML = 'AquaFPS\' stream is live with ' + stream.stream.viewers + ' viewers';
         offline.parentNode.replaceChild(online, offline);
        }
     });
